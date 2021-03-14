@@ -3,10 +3,9 @@ module github.com/AnimusPEXUS/gojsonrpc2clientweb
 go 1.15
 
 require (
-	github.com/AnimusPEXUS/gojswebapi v0.0.0-20200711170105-c1233c743d92
-	github.com/AnimusPEXUS/utils v0.0.0-20201126205727-26583de9dcaa // indirect
-	github.com/AnimusPEXUS/wasmtools v0.0.0-20200711170105-c1233c743d92 // indirect
-	github.com/dennwc/dom v0.3.0 // indirect
-	github.com/gorilla/websocket v1.4.2 // indirect
+	github.com/AnimusPEXUS/gojswebapi v0.0.0-20210314201857-659b5db6fd5d
+	github.com/AnimusPEXUS/utils v0.0.0-20210314201431-1e037cf75c30
+	github.com/gorilla/mux v1.8.0
+	github.com/gorilla/websocket v1.4.2
 	github.com/sourcegraph/jsonrpc2 v0.0.0-20210201082850-366fbb520750
 )
