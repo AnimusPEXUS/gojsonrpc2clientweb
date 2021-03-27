@@ -1,6 +1,8 @@
-github.com/AnimusPEXUS/gojswebapi v0.0.0-20210324001541-5fceb11a560a h1:mJ3BFINRCxZWc28q6jQ8zUvqZDehyxNvCbqUdl+A2rU=
-github.com/AnimusPEXUS/gojswebapi v0.0.0-20210324001541-5fceb11a560a/go.mod h1:sKKlE8HBjB4btEPN/A8swd8nBonuV/7/NT6QHLwsi00=
-github.com/AnimusPEXUS/utils v0.0.0-20210314201431-1e037cf75c30/go.mod h1:ELB3P2MVnZmzDzuL8Nd34xDhGBVOncJKmjm37UKR+1Q=
+github.com/AnimusPEXUS/gojstools v0.0.0-20210326222336-a73428be970b h1:mRRqTvdWU9N5XD4kGjoKrCm1F3N0MnSz1hzb68SC6Pw=
+github.com/AnimusPEXUS/gojstools v0.0.0-20210326222336-a73428be970b/go.mod h1:P1AufQ109iiWwwCf2x10z1iFEilkD7GXIxugDYP2p9c=
+github.com/AnimusPEXUS/gojswebapi v0.0.0-20210326142835-df816a83a607/go.mod h1:P1EHlJM7sUwSurwlDErg40mG3SlR7aN/vIuoZRuGDjU=
+github.com/AnimusPEXUS/gojswebapi v0.0.0-20210326232306-784114b9a875 h1:I8bYI0X5mstVIxaPlkAPb/Ms5F7sPb4+HgaIybuLryc=
+github.com/AnimusPEXUS/gojswebapi v0.0.0-20210326232306-784114b9a875/go.mod h1:viuumnMbsuNN3Cd2j/BfV/sy5eS48S1vtt81duCd9xY=
 github.com/AnimusPEXUS/utils v0.0.0-20210324003110-4bd50c7dd42e h1:a7kJUdRHTXsaV5q+rm56k0I9by6D8yE+OiRXgUTzpx8=
 github.com/AnimusPEXUS/utils v0.0.0-20210324003110-4bd50c7dd42e/go.mod h1:s9jwdFf7uDEjVkVWVpMEZ0FKuOz6K7WHCvEg8UEf5bo=
 github.com/antchfx/htmlquery v1.2.3/go.mod h1:B0ABL+F5irhhMWg54ymEZinzMSi0Kt3I2if0BLYa3V0=
@@ -27,12 +29,10 @@ github.com/sourcegraph/jsonrpc2 v0.0.0-20210201082850-366fbb520750/go.mod h1:Zaf
 golang.org/x/crypto v0.0.0-20190308221718-c2843e01d9a2/go.mod h1:djNgcEr1/C05ACkg1iLfiJU5Ep61QUkGW8qpdssI0+w=
 golang.org/x/net v0.0.0-20190311183353-d8887717615a/go.mod h1:t9HGtf8HONx5eT2rtn7q6eTqICYqUVnKs3thJo3Qplg=
 golang.org/x/net v0.0.0-20200421231249-e086a090c8fd/go.mod h1:qpuaurCH72eLCgpAm/N6yyVIVM9cpaDIP3A8BGJEC5A=
-golang.org/x/net v0.0.0-20210226172049-e18ecbb05110/go.mod h1:m0MpNAwzfU5UDzcl9v0D8zg8gWTRqZa9RBIspLL5mdg=
 golang.org/x/net v0.0.0-20210323141857-08027d57d8cf/go.mod h1:RBQZq4jEuRlivfhVLdyRGr576XBO4/greRjx4P4O3yc=
 golang.org/x/sys v0.0.0-20190215142949-d0b11bdaac8a/go.mod h1:STP8DvDyc/dI5b8T5hshtkjS+E42TnysNCUPdjciGhY=
 golang.org/x/sys v0.0.0-20200323222414-85ca7c5b95cd/go.mod h1:h1NjWce9XRLGQEsW7wpKNCjG9DtNlClVuFLEZdDNbEs=
 golang.org/x/sys v0.0.0-20201119102817-f84b799fce68/go.mod h1:h1NjWce9XRLGQEsW7wpKNCjG9DtNlClVuFLEZdDNbEs=
-golang.org/x/sys v0.0.0-20210314195730-07df6a141424/go.mod h1:h1NjWce9XRLGQEsW7wpKNCjG9DtNlClVuFLEZdDNbEs=
 golang.org/x/sys v0.0.0-20210315160823-c6e025ad8005/go.mod h1:h1NjWce9XRLGQEsW7wpKNCjG9DtNlClVuFLEZdDNbEs=
 golang.org/x/sys v0.0.0-20210320140829-1e4c9ba3b0c4/go.mod h1:h1NjWce9XRLGQEsW7wpKNCjG9DtNlClVuFLEZdDNbEs=
 golang.org/x/term v0.0.0-20201126162022-7de9c90e9dd1/go.mod h1:bj7SfCRtBDWHUb9snDiAeCFNEtKQo2Wmx5Cou7ajbmo=

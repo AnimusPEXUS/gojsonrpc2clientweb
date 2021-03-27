@@ -9,6 +9,7 @@ import (
 
 	"github.com/sourcegraph/jsonrpc2"
 
+	gojstoolsutils "github.com/AnimusPEXUS/gojstools/utils"
 	"github.com/AnimusPEXUS/gojswebapi/array"
 	"github.com/AnimusPEXUS/gojswebapi/events"
 	"github.com/AnimusPEXUS/gojswebapi/ws"
@@ -78,12 +79,12 @@ func (self *WebSocketClientObjectStream) WriteObject(obj interface{}) error {
 
 	len_data := len(data)
 
-	ar, err := array.NewArray(array.ArrayTypeUint8, js.ValueOf(len_data), nil, nil)
+	ar, err := array.NewArray(array.ArrayTypeUint8, gojstoolsutils.JSValueLiteralToPointer(js.ValueOf(len_data)), nil, nil)
 	if err != nil {
 		return err
 	}
 
-	res := js.CopyBytesToJS(ar.JSValue, data)
+	res := js.CopyBytesToJS(*ar.JSValue, data)
 	if res != len_data {
 		log.Println("res != len_data")
 	}
@@ -152,7 +153,7 @@ func (self *WebSocketClientObjectStream) ReadObject(v interface{}) error {
 				return errors.New("websocket message.data have not ArrayTypeUint8 array type")
 			}
 			godata := make([]byte, data.Get("length").Int())
-			js.CopyBytesToGo(godata, data)
+			js.CopyBytesToGo(godata, *data)
 			err = json.Unmarshal(godata, v)
 			if err != nil {
 				return err
