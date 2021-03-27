@@ -1,5 +1,9 @@
+export GONOPROXY=github.com/AnimusPEXUS/*
+export GOOS=js
+export GOARCH=wasm
+
 all: get
 
 get:
-		GOOS=js GOARCH=wasm go get -u -v "./..."
-		GOOS=js GOARCH=wasm go mod tidy
+		go get -u -v "./..."
+		go mod tidy
