@@ -93,14 +93,15 @@ func (self *WebSocketClientObjectStream) WriteObject(obj interface{}) error {
 	res := js.CopyBytesToJS(ar_js, data)
 	if res != len_data {
 		log.Println("res != len_data")
+		return errors.New("WebSocketClientObjectStream:WriteObject:res != len_data")
 	}
 
-	log.Println("ar_js", ar_js.Call("toString").String())
-	log.Println("ar_js2", ar_js.Call("toString").String())
-	state, _ := self.options.WebSocket.ReadyStateGet()
-	log.Println("ws state", state)
-	url, _ := self.options.WebSocket.URLGet()
-	log.Println("ws url", url)
+	// log.Println("ar_js", ar_js.Call("toString").String())
+	// log.Println("ar_js2", ar_js.Call("toString").String())
+	// state, _ := self.options.WebSocket.ReadyStateGet()
+	// log.Println("ws state", state)
+	// url, _ := self.options.WebSocket.URLGet()
+	// log.Println("ws url", url)
 
 	err = self.options.WebSocket.Send(&ar_js)
 	if err != nil {
