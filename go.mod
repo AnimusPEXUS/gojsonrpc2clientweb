@@ -4,7 +4,7 @@ go 1.15
 
 require (
 	github.com/AnimusPEXUS/gojstools v0.0.0-20210330193708-833c144bad23
-	github.com/AnimusPEXUS/gojswebapi v0.0.0-20210330193625-38b5b82c8534
+	github.com/AnimusPEXUS/gojswebapi v0.0.0-20210330200423-a78e9c66752e
 	github.com/AnimusPEXUS/utils v0.0.0-20210324003110-4bd50c7dd42e
 	github.com/gorilla/mux v1.8.0
 	github.com/gorilla/websocket v1.4.2
