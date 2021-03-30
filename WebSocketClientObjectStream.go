@@ -93,6 +93,8 @@ func (self *WebSocketClientObjectStream) WriteObject(obj interface{}) error {
 		log.Println("res != len_data")
 	}
 
+	log.Println("ar.JSValue", ar.ToString())
+
 	err = self.options.WebSocket.Send(ar.JSValue)
 	if err != nil {
 		return err

@@ -3,8 +3,8 @@ module github.com/AnimusPEXUS/gojsonrpc2clientweb
 go 1.15
 
 require (
-	github.com/AnimusPEXUS/gojstools v0.0.0-20210330034020-e7ec9892109d
-	github.com/AnimusPEXUS/gojswebapi v0.0.0-20210330190313-3ceb6a2987d9
+	github.com/AnimusPEXUS/gojstools v0.0.0-20210330193708-833c144bad23
+	github.com/AnimusPEXUS/gojswebapi v0.0.0-20210330193625-38b5b82c8534
 	github.com/AnimusPEXUS/utils v0.0.0-20210324003110-4bd50c7dd42e
 	github.com/gorilla/mux v1.8.0
 	github.com/gorilla/websocket v1.4.2
