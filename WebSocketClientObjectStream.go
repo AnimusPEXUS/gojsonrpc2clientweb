@@ -84,7 +84,11 @@ func (self *WebSocketClientObjectStream) WriteObject(obj interface{}) error {
 		return err
 	}
 
-	res := js.CopyBytesToJS(*ar.JSValue, data)
+	arnp := *ar.JSValue
+	log.Println("arnp:", arnp.Type().String())
+	log.Println("arnp 2:", ar.JSValue.String())
+
+	res := js.CopyBytesToJS(arnp, data)
 	if res != len_data {
 		log.Println("res != len_data")
 	}
