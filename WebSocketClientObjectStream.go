@@ -44,7 +44,9 @@ type WebSocketClientObjectStream struct {
 	err               error
 }
 
-func NewWebSocketClientObjectStream(options *WebSocketClientObjectStreamOptions) (
+func NewWebSocketClientObjectStream(
+	options *WebSocketClientObjectStreamOptions,
+) (
 	*WebSocketClientObjectStream,
 	error,
 ) {
@@ -126,8 +128,8 @@ func (self *WebSocketClientObjectStream) ReadObject(v interface{}) error {
 	log.Println("waiting for message from chan")
 	e := <-self.read_object_queue
 	log.Println("got message from chan")
-	var val ReadObjectS
-	val = e.(ReadObjectS)
+	var val *ReadObjectS
+	val = e.(*ReadObjectS)
 	if val.CloseEvent != nil || val.ErrorEvent != nil {
 		if val.ErrorEvent != nil {
 			e_msg, err := val.ErrorEvent.GetMessage()
@@ -186,15 +188,15 @@ func (self *WebSocketClientObjectStream) ReadObject(v interface{}) error {
 
 func (self *WebSocketClientObjectStream) onerror(e *events.ErrorEvent) {
 	log.Println("got error:", e)
-	self.read_object_queue <- (ReadObjectS{ErrorEvent: e})
+	self.read_object_queue <- (&ReadObjectS{ErrorEvent: e})
 }
 
 func (self *WebSocketClientObjectStream) onclose(e *events.CloseEvent) {
 	log.Println("got close:", e)
-	self.read_object_queue <- (ReadObjectS{CloseEvent: e})
+	self.read_object_queue <- (&ReadObjectS{CloseEvent: e})
 }
 
 func (self *WebSocketClientObjectStream) onmessage(e *events.MessageEvent) {
 	log.Println("got message:", e)
-	self.read_object_queue <- (ReadObjectS{MessageEvent: e})
+	self.read_object_queue <- (&ReadObjectS{MessageEvent: e})
 }
