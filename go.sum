@@ -5,8 +5,9 @@ github.com/AnimusPEXUS/gojstools v0.0.0-20210327184709-7679315fbbd9/go.mod h1:0o
 github.com/AnimusPEXUS/gojstools v0.0.0-20210327193209-4c20672e96a8/go.mod h1:0CVEWiLy27Yi0s6CPV4e75rvZ154ecfUWNkz4phbfB8=
 github.com/AnimusPEXUS/gojstools v0.0.0-20210329005706-f2245427eca6/go.mod h1:tiQHtmvy0QH+ztMA1/kgCZB2f5+MVZKecI7gRRYuUGE=
 github.com/AnimusPEXUS/gojstools v0.0.0-20210330034020-e7ec9892109d/go.mod h1:WXawGe8kevvpflymYtPU8KcV6eaLe+fGO1O1D0LmlZk=
-github.com/AnimusPEXUS/gojstools v0.0.0-20210330193708-833c144bad23 h1:1uXIoPNmWDnzaEURGylpB03mFVciBtGEECXgJ5jMmcE=
 github.com/AnimusPEXUS/gojstools v0.0.0-20210330193708-833c144bad23/go.mod h1:prS3/XkSRL/m/hXN0eqBNvdPhymBpCWrfbNPyHNgbnI=
+github.com/AnimusPEXUS/gojstools v0.0.0-20210331035309-a04bc23aedb0 h1:yfkKkUnHnKHsktW5EPW7NGJTj8L2UA8pbe0yt95+oMg=
+github.com/AnimusPEXUS/gojstools v0.0.0-20210331035309-a04bc23aedb0/go.mod h1:FIOBxRaZKR6CuKWV0AuSPFe8tDKfgKu2DGFYzJATI1Q=
 github.com/AnimusPEXUS/gojswebapi v0.0.0-20210326142835-df816a83a607/go.mod h1:P1EHlJM7sUwSurwlDErg40mG3SlR7aN/vIuoZRuGDjU=
 github.com/AnimusPEXUS/gojswebapi v0.0.0-20210326232306-784114b9a875/go.mod h1:viuumnMbsuNN3Cd2j/BfV/sy5eS48S1vtt81duCd9xY=
 github.com/AnimusPEXUS/gojswebapi v0.0.0-20210327162152-3d72f24fad60/go.mod h1:Wf906dy8lUKoJoxbUvyf90LOQ1PIEU5sbzvb+DAicdc=
