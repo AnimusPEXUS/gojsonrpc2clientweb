@@ -75,7 +75,7 @@ func (self *WebSocketClientObjectStream) WriteObject(obj interface{}) error {
 		return err
 	}
 
-	log.Println("WebSocketClientObjectStream.WriteObject marshal result:", string(data))
+	// log.Println("WebSocketClientObjectStream.WriteObject marshal result:", string(data))
 
 	len_data := len(data)
 
@@ -103,10 +103,13 @@ func (self *WebSocketClientObjectStream) WriteObject(obj interface{}) error {
 	// url, _ := self.options.WebSocket.URLGet()
 	// log.Println("ws url", url)
 
+	log.Println("WebSocketClientObjectStream : sending ", data)
+
 	err = self.options.WebSocket.Send(&ar_js)
 	if err != nil {
 		return err
 	}
+	log.Println("WebSocketClientObjectStream : sent")
 	return nil
 }
 
